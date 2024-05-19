@@ -40,7 +40,7 @@ ALTER TABLE Teaches ADD CONSTRAINT EC_Teaches CONNECTION (Teacher to Course);
 
 CREATE TABLE Works AS EDGE;
 GO
-ALTER TABLE Works ADD CONSTRAINT EC_Belongs CONNECTION (Teacher To EduInstitution);
+ALTER TABLE Works ADD CONSTRAINT EC_Works CONNECTION (Teacher To EduInstitution);
 
 -- Заполнение таблицы узлов "Teacher"
 INSERT INTO Teacher (ID, First_Name, Last_Name, Degree)
